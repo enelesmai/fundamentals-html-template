@@ -1,39 +1,52 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  
+    <script type="javascript" src="js/bootstrap.js"></script>
   </head>
   <body>
-<<<<<<< HEAD
     <div id="page-wrapper">
+
       <header id="header">
-        <div class="logo">
-          <img style="width: 300px;"
-            id="header-img"
-            src="software-development-banner.jpg"
-            alt="Software Development"
-          />
-        </div>
-    
-        <div class="collapse navbar-collapse navbar-fixed-top" id="nav-bar">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link" href="#">Features</a>
-            <a class="nav-item nav-link" href="#">How It Works</a>
-            <a class="nav-item nav-link" href="#">Pricing</a>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top" id="nav-bar">
+          <a class="navbar-brand" href="#">
+            <div class="logo">
+              <img style="width: 300px;"
+              id="header-img"
+              src="software-development-banner.jpg"
+              alt="Software Development"/>
+            </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link" href="#features">Features</a>
+              <a class="nav-item nav-link" href="#how-it-works">How It Works</a>
+              <a class="nav-item nav-link" href="#pricing">Pricing</a>
+            </div>
           </div>
-        </div>
+        </nav>
+
       </header>
     
-      <div class="container"></div>
-    
       <section id="hero">
-        <h2>Software Development</h2>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-          <input name="email" id="email" type="email" placeholder="Enter your email address" required/>
-          <input id="submit" type="submit" value="Get Started" class="btn" />
-        </form>
+
+        <div class="container">
+          <h2>Software Development</h2>
+
+          <nav class="navbar navbar-light bg-light">
+            <form id="form" action="https://www.freecodecamp.com/email-submit" class="form-inline">
+              <input class="form-control mr-sm-2"  name="email" id="email" type="email" placeholder="Enter your email address" required/>
+              <input class="btn btn-outline-success my-2 my-sm-0" id="submit" type="submit" value="Get Started" class="btn" />
+            </form>
+          </nav>
+        </div>
+
       </section>
     
       <div class="container">
@@ -41,20 +54,18 @@
           <div class="grid">
             <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
             <div class="desc">
-              <h2>Premium Materials</h2>
+              <h3>Premium Services</h3>
               <p>
-                Our trombones use the shiniest brass which is sourced locally. This
-                will increase the longevity of your purchase.
+                Our software solves the problem for you.
               </p>
             </div>
           </div>
           <div class="grid">
             <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
             <div class="desc">
-              <h2>Fast Shipping</h2>
+              <h3>Fast Delivering</h3>
               <p>
-                We make sure you recieve your trombone as soon as we have finished
-                making it. We also provide free returns if you are not satisfied.
+                We make sure you have your service enabled as soon as possible. We also provide warranty if you are not satisfied.
               </p>
             </div>
           </div>
@@ -63,10 +74,10 @@
               <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
             </div>
             <div class="desc">
-              <h2>Quality Assurance</h2>
+              <h3>Quality Assurance</h3>
               <p>
                 For every purchase you make, we will ensure there are no damages or
-                faults and we will check and test the pitch of your instrument.
+                faults and we will check and test the pitch of your software.
               </p>
             </div>
           </div>
@@ -74,55 +85,69 @@
         <section id="how-it-works">
           <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/i-QyW8D3ei0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
+
         <section id="pricing">
-          <div class="product" id="tenor">
-            <div class="level">Tenor Trombone</div>
-            <h2>$600</h2>
-            <ol>
-              <li>Lorem ipsum.</li>
-              <li>Lorem ipsum.</li>
-              <li>Lorem ipsum dolor.</li>
-              <li>Lorem ipsum.</li>
-            </ol>
-            <button class="btn">Select</button>
+          
+          <div class="container">
+            <div class="card-deck mb-3 text-center">
+              <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                  <h4 class="my-0 font-weight-normal">Free</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>10 users included</li>
+                    <li>2 GB of storage</li>
+                    <li>Email support</li>
+                    <li>Help center access</li>
+                  </ul>
+                  <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+                </div>
+              </div>
+              <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                  <h4 class="my-0 font-weight-normal">Pro</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>20 users included</li>
+                    <li>10 GB of storage</li>
+                    <li>Priority email support</li>
+                    <li>Help center access</li>
+                  </ul>
+                  <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+                </div>
+              </div>
+              <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                  <h4 class="my-0 font-weight-normal">Enterprise</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>30 users included</li>
+                    <li>15 GB of storage</li>
+                    <li>Phone and email support</li>
+                    <li>Help center access</li>
+                  </ul>
+                  <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+                </div>
+              </div>
+            </div>
+          
           </div>
-          <div class="product" id="bass">
-            <div class="level">Bass Trombone</div>
-            <h2>$900</h2>
-            <ol>
-              <li>Lorem ipsum.</li>
-              <li>Lorem ipsum.</li>
-              <li>Lorem ipsum dolor.</li>
-              <li>Lorem ipsum.</li>
-            </ol>
-            <button class="btn">Select</button>
-          </div>
-          <div class="product" id="valve">
-            <div class="level">Valve Trombone</div>
-            <h2>$1200</h2>
-            <ol>
-              <li>Plays similar to a Trumpet</li>
-              <li>Great for Jazz Bands</li>
-              <li>Lorem ipsum dolor.</li>
-              <li>Lorem ipsum.</li>
-            </ol>
-            <button class="btn">Select</button>
-          </div>
+
         </section>
+        
         <footer>
-          <ul>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-          <span>Copyright 2016, Original Trombones</span>
+          <span>Copyright 2019, Sofware Development</span>
         </footer>
       </div>
+
     </div>
 
-=======
-    <h1>Hello World, we are software developers!</h1>
->>>>>>> 9ff3359d88757305855932685c128b5695b1f00a
   </body>
 </html>
 
